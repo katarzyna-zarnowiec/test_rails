@@ -1,11 +1,29 @@
 <%= provide(:title, "Home") %>
-<div class="center jumbotron">
+
+<div class="center">  
+
+
+  <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag("img1_slider_home.jpg") %>
+        </div>
+        <div class="item">
+          <%= image_tag("img2_slider_home.jpg") %>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+</div>
   <h1>Welcome!</h1>
 
   <h2>
     A passion for innovation
   </h2>
 
-  <%= link_to "View more!", '#', class: "btn btn-lg btn-primary" %>
-</div>
+
 
