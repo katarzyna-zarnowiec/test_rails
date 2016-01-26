@@ -1,29 +1,15 @@
 <%= provide(:title, "Home") %>
+<% banner = Banner.new %>
 
 <div class="center">  
-
-
-  <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <%= image_tag("img1_slider_home.jpg") %>
-        </div>
-        <div class="item">
-          <%= image_tag("img2_slider_home.jpg") %>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
+	<%= carousel_for(banner.img_urls("homeBanner/")) %>
 </div>
-  <h1>Welcome!</h1>
+<h1>Welcome!</h1>
 
-  <h2>
-    A passion for innovation
-  </h2>
+<h2>
+  A passion for innovation
+</h2>
+
 
 
 
