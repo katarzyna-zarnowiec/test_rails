@@ -57,33 +57,62 @@ p {
     background-color: #FFF;
     border-color: #FFF;
     text-align: center;
-    line-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+  padding: 0px 0px;
 }
 
 .navbar-nav li a {
   display: inline-block;
 }
 
-.navbar-nav li:before {
-	content: " | ";
-	color: blue;
-}
+/* Only on big devices, when navbar is not collapsed */
+@media only screen and (min-width : 768px) {
 
-.navbar-nav li:first-child:before {
-  content: none;
-}
+  .container-fluid { 
+    max-width: 1000px; 
+  }
+  
+  .navbar-nav li a {
+    line-height: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 
-.navbar-nav li:last-child:before {
-content: none;
+  .navbar-nav li:before {
+    content: " | ";
+    color: blue;
+  } 
+
+  .navbar-nav li:first-child:before {
+    content: none;
+  }
+
+  .navbar-nav li:last-child:before {
+    content: none;
+  }
 }
 
 #logo {
-  margin-left: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 50px;
 }
 
 #linkedin {
-  margin-right: 100px;
-  margin-left: 100px;
+  padding-right:50px;
+  padding-left: 50px;
+}
+
+/* Carousel */
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: orange;
+  border: 0px;
 }
