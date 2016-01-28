@@ -1,10 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 /* universal */
+html {
+  height: 100%;
+}
 
 body {
-  padding-top: 60px;
+  padding-top: 60px; 
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 section {
@@ -57,6 +63,7 @@ p {
     background-color: #FFF;
     border-color: #FFF;
     text-align: center;
+    text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -120,4 +127,47 @@ p {
   margin: 1px;
   background-color: orange;
   border: 0px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Footer */
+
+hr.hr-footer{
+  width: 50%;
+}
+
+#footer {
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#footer-icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+mark.blue {
+  color: rgb(6,60,153);
+  font-weight: bold;
+  background: none;
+}
+
+#footer-bottom {
+  line-height: 30px;
+  color: white;
+  background-color: rgb(6,60,153);
+  margin-top: 50px;
 }
