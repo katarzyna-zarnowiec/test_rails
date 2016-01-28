@@ -72,10 +72,7 @@ p {
 /* Only on big devices, when navbar is not collapsed */
 @media only screen and (min-width : 768px) {
 
-  .container-fluid { 
-    max-width: 1000px; 
-  }
-  
+    
   .navbar-nav li a {
     line-height: 80px;
     padding-top: 0px;
@@ -113,6 +110,14 @@ p {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
+  background-color: white;
+  border: 0px;
+}
+
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
   background-color: orange;
   border: 0px;
 }
