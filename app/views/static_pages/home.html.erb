@@ -6,12 +6,29 @@
 	<div class="row">
 	  <div class="col-md-3  visible-md visible-lg">
 	  </div>
-	  <div class="col-md-6">
-	    <p><%= image_tag("logo_philosophy.png", id: "footer-icon") %></p>
-			<h1>Our philosophy</h1>
+	  <div class="col-md-6 col-centered">
+	    <p><%= image_tag("logo_philosophy.png", id: "home-icon") %></p>
+			<h1 id="motto">Our <mark class="orange">philosophy</mark></h1>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-			<p><%= image_tag("circulo_philosophy_1.png") %><%= image_tag("circulo_philosophy_2.png") %> <%= image_tag("circulo_philosophy_3.png")%> </p>
+		</div>
+	  <div class="col-md-3 visible-md visible-lg">
 	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-3  visible-md visible-lg">
+	  </div>
+	  <div class="col-md-2  col-centered">
+	  	<%= image_tag("circulo_philosophy_1.png", class: "round-icon") %>
+	  	<p>Compromise</p>  
+		</div>
+	  <div class="col-md-2  col-centered">
+	  	<%= image_tag("circulo_philosophy_2.png", class: "round-icon") %> 
+	  	<p>Searching value projects</p>  
+		</div>
+	  <div class="col-md-2  col-centered">
+	    <%= image_tag("circulo_philosophy_3.png", class: "round-icon")%>
+	  	<p>Helping people grow up</p>  
+		</div>
 	  <div class="col-md-3 visible-md visible-lg">
 	  </div>
 	</div>

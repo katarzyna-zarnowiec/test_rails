@@ -8,8 +8,10 @@ html {
 }
 
 body {
-  padding-top: 60px; 
+  padding-top: 110px; 
   height: 100%;
+  width: 100%;
+  margin: 0%;  
   font-family: 'Oswald', sans-serif;
 }
 
@@ -70,11 +72,17 @@ p {
 
 .navbar-brand {
   padding: 0px 0px;
+  margin-left: 20px !important;
 }
 
 .navbar-nav li a {
   display: inline-block;
 }
+
+.navbar-toggle {
+  margin-bottom: 40px;
+}
+
 
 /* Only on big devices, when navbar is not collapsed */
 @media only screen and (min-width : 768px) {
@@ -100,13 +108,10 @@ p {
   }
 }
 
-#logo {
-  padding-left: 50px;
-}
 
 #linkedin {
-  padding-right:50px;
-  padding-left: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 /* Carousel */
@@ -145,12 +150,12 @@ p {
 
 hr.hr-footer{
   width: 50%;
+  margin-top: 100px;
 }
 
 #footer {
   height: 60px;
   text-align: center;
-  vertical-align: middle;
 }
 
 #footer-icon {
@@ -165,9 +170,34 @@ mark.blue {
   background: none;
 }
 
-#footer-bottom {
+.footer-bottom {
   line-height: 30px;
   color: white;
   background-color: rgb(6,60,153);
   margin-top: 50px;
+  vertical-align: middle;
+}
+
+/* Home page styles */
+#motto {
+    text-transform: uppercase;
+}
+
+mark.orange {
+  color: orange;
+  background: none;
+}
+
+img.round-icon {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#home-icon {
+  margin-top: 80px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
