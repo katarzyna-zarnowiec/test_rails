@@ -14,6 +14,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   	get root_path
   	assert_template 'static_pages/home'
   	assert_select "a[href=?]", root_path, count:1
+    assert_select "a[href=?]", secrets_path
   end
 
   test "carousel on home website" do
