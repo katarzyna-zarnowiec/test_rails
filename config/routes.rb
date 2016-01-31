@@ -2,7 +2,7 @@ TestRailsApp::Application.routes.draw do
 
   root 'static_pages#home'
   get 'home' => 'static_pages#home'
-  get 'secrets' => 'secrets#index', as: :investment_focus_path
+  get 'secrets' => 'secrets#index'
   get 'secrets/new'
 
   # The priority is based upon order of creation: first created -> highest priority.
