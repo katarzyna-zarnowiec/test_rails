@@ -5,5 +5,10 @@ class SecretsControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
+  test "should get secrets index" do
+    get :index
+    assert_response :success
+    assert_select "title", "AMEGAM | Investment Focus"
+  end
 
 end
