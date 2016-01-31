@@ -10,8 +10,9 @@ module ApplicationHelper
 		end
 	end
 
-	# check if the page is active
+	# check if the page is active in order to change navbar li status
 	def active_class(link_path)
   	current_page?(link_path) ? "active" : ""
  	end
+
 end
