@@ -8,17 +8,17 @@
         <span class="icon-bar"></span> 
       </button>
       <div class="navbar-brand">
-        <%= link_to image_tag("logo_cabecera.png", alt: "AMEGAM"), '#' %>
+        <%= link_to image_tag("logo_cabecera.png", alt: "AMEGAM"), root_path %>
       </div>
     </div>
     <div class="collapse navbar-collapse" id="headerNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About us", '#' %></li>
-	      <li><%= link_to "Investment focus",   '#' %></li>
+	      <li class=<%= active_class(secrets_path) %> ><%= link_to "Investment focus",   secrets_path%></li>
 	      <li><%= link_to "Portfolio", '#' %></li>
 	      <li><%= link_to "News", '#' %></li>
 	      <li><%= link_to "Contact us", '#' %></li>
-	      <li><%= link_to image_tag("linkedin.png", alt: "linkedin"), '#', id: "linkedin" %></li>
+	      <li><%= link_to image_tag("linkedin.png", alt: "linkedin"), 'http://linkedin.com/', :target => "_blank", id: "linkedin" %></li>
       </ul>
     </div>
   </div>
