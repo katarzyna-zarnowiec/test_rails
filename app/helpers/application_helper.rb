@@ -9,4 +9,9 @@ module ApplicationHelper
 			base_title + " | " + page_title
 		end
 	end
+
+	# check if the page is active
+	def active_class(link_path)
+  	current_page?(link_path) ? "active" : ""
+ 	end
 end

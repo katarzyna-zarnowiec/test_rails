@@ -79,6 +79,11 @@ p {
   display: inline-block;
 }
 
+.navbar-nav .active a { 
+  background:white !important;
+  color:orange !important;
+}
+
 .navbar-toggle {
   margin-bottom: 40px;
 }
@@ -207,3 +212,4 @@ img.round-icon {
     display: flex;
     align-items: center;
 }
+
