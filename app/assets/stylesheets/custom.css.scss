@@ -194,11 +194,29 @@ img.round-icon {
    margin: 0 !important;
 }
 
+/* Investment focus */
+
+.alternating {
+  margin-top: 60px;
+}
+
+.alternating .caption{
+  border-left: 2px solid #bbb;
+  padding-left: 10px;
+  text-align: left;
+}
+
 /* General formatting*/
 .vcenter {
     display: flex;
     align-items: center;
 }
+
+.v-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 mark.blue-bold {
   color: rgb(6,60,153);
