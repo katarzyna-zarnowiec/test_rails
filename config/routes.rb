@@ -5,6 +5,7 @@ TestRailsApp::Application.routes.draw do
   get 'secrets' => 'secrets#index'
   get 'secrets/new' => 'secrets#new'
   get 'secrets/edit' => 'secrets#edit'
+  get 'secrets/:id' => 'secrets#show'
   resources :secrets
 
   # The priority is based upon order of creation: first created -> highest priority.
