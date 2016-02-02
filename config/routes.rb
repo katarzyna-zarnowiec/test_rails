@@ -3,7 +3,10 @@ TestRailsApp::Application.routes.draw do
   root 'static_pages#home'
   get 'home' => 'static_pages#home'
   get 'secrets' => 'secrets#index'
-  get 'secrets/new'
+  get 'secrets/new' => 'secrets#new'
+  get 'secrets/edit' => 'secrets#edit'
+  get 'secrets/:id' => 'secrets#show'
+  resources :secrets
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

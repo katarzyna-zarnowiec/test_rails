@@ -194,11 +194,29 @@ img.round-icon {
    margin: 0 !important;
 }
 
+/* Investment focus */
+
+.alternating {
+  margin-top: 60px;
+}
+
+.alternating .caption{
+  border-left: 2px solid #bbb;
+  padding-left: 10px;
+  text-align: left;
+}
+
 /* General formatting*/
 .vcenter {
     display: flex;
     align-items: center;
 }
+
+.v-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 
 mark.blue-bold {
   color: rgb(6,60,153);
@@ -231,4 +249,31 @@ p.italic {
 
 img.primary {
   padding-bottom: 60px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }
