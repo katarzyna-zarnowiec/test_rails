@@ -7,7 +7,7 @@ module SecretsHelper
 
 		secrets.each do |secret|
 			caption = content_tag(:div, content_tag(:div, secret.text, class: 'caption'), class: 'col-xs-8 col-md-4')
-			if (id % 2) == 0
+			if (id % 2) == 1
 				img = content_tag(:div, link_to( image_tag( secret.image, class: "img-responsive pull-left"), secret_path(secret.id)), class: 'col-xs-4 col-md-4')
 	  	content_all =  safe_join([content_all, content_tag(:div, safe_join([empty_column, img, caption, empty_column]), class: "row vcenter alternating")])
 			else
