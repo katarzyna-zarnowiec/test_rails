@@ -29,6 +29,12 @@ class SecretsController < ApplicationController
   	@secrets = Secret.all
   end
 
+  def destroy
+    Secret.find(params[:id]).destroy
+    flash[:success] = "Secret was succesfully deleted!"
+    redirect_to secrets_path
+  end
+
   private
 
     def secret_params
