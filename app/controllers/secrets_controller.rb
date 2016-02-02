@@ -10,7 +10,6 @@ class SecretsController < ApplicationController
   	@secret = Secret.new(secret_params)
   	if @secret.save
   		flash[:success] = "New secret successfully added!"
-  		# render 'index'
       redirect_to @secret
   	else
   		render 'new'
@@ -23,6 +22,16 @@ class SecretsController < ApplicationController
 
   def edit
     @secret = Secret.find(params[:id])
+  end
+
+  def update
+    @secret = Secret.find(params[:id])
+    if @secret.update_attributes(secret_params)
+      flash[:success] = "Secret was successfully updated"
+      redirect_to secrets_path
+    else
+      render 'edit'
+    end
   end
 
   def index
