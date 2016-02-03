@@ -28,7 +28,7 @@ class SecretsController < ApplicationController
     @secret = Secret.find(params[:id])
     if @secret.update_attributes(secret_params)
       flash[:success] = "Secret was successfully updated"
-      redirect_to secrets_path
+      redirect_to @secret
     else
       render 'edit'
     end
