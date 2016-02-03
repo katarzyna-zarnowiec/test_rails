@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
+# Gem which allows to create sample data for seeding data base
+gem 'faker', '1.4.2'
 # Add bootstrap
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'sass-rails', '5.0.2'
