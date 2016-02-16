@@ -7,6 +7,7 @@ TestRailsApp::Application.routes.draw do
   get 'secrets/edit' => 'secrets#edit'
   get 'secrets/:id' => 'secrets#show'
   resources :secrets
+  mount Spree::Core::Engine, :at => '/shop/'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
 # Gem which allows to create sample data for seeding data base
-gem 'faker', '1.4.2'
+gem 'ffaker'
 # Add bootstrap
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'sass-rails', '5.0.2'
@@ -19,6 +19,10 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks', '2.3.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.2.3'
+# Add solidus
+gem 'solidus'
+gem 'solidus_auth_devise'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
